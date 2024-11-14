@@ -1,74 +1,71 @@
-<<<<<<< HEAD
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created with Create React App and consists of two main parts.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## First Part: React Login Page
 
-### `npm start`
+In this section, you’ll be working with React to create a simple login page with the following components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Input Field Component**: Takes `type` and `placeholder` as props.
+- **Button Component**: A single button for submitting the form (does not require props).
+- **Navigation**: Use [React Router](https://reactrouter.com/en/main) to handle page redirection.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Steps
 
-### `npm test`
+1. Create and style the login page with the components listed.
+2. Use React Router for navigation after login.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Second Part: JavaScript Pokemon Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+In this part, you will create a simple, static HTML and JavaScript-based site consisting of two pages.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### First Page: Landing/Login Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This page serves as the login portal. It contains:
 
-### `npm run eject`
+- A form with two text fields (email and password) and a "Login" button.
+- **Basic Validation**: Match static email and password (case-sensitive).
+- **Error Alerts**: If fields are empty or credentials do not match, show an inline error.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**Requirements**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Responsive design (based on provided breakpoints).
+- Use only vanilla JS and CSS.
+- Follow the reference layout image as guidance.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Second Page: Pokemon List
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Upon successful login, display a list of 150 Pokemon in card format, retrieved from [PokeAPI](https://pokeapi.co/).
 
-## Learn More
+**Features**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Pokemon Cards**: Display each Pokemon’s name and number.
+- **Sorting**: Sort the cards alphabetically.
+- **Search**: Implement a search bar for dynamic filtering by name.
+- **Stats View**: Clicking on a card shows detailed stats in a popup.
+- **Hover Animation**: Cards should have a hover effect.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Additional Features (Optional)**:
 
-### Code Splitting
+- Display extra details like types and base experience.
+- Add a filter to order Pokemon by strength.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+**Acceptance Criteria**:
 
-### Analyzing the Bundle Size
+- Use vanilla JavaScript and CSS, handle edge cases (errors, placeholders).
+- Implement localStorage for filtering and data manipulation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+For reference, check out this sample site: [PokeAPI Webflow Example](https://pokeapi.webflow.io/).
+## Preview of the Project Pages
 
-### Making a Progressive Web App
+### Login Page
+![Login Page](assets/landing-login.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Pokemon Page Layout
+![Pokemon Page](assets/pokemon-page.png)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# Pok-mon-List-React
->>>>>>> 7905f12630ed37a274d6f0947a12a81cbc9eeb15
