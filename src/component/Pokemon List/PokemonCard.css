@@ -1,0 +1,14 @@
+.pokemon-card {
+    width: 80%; 
+    background-color: #fff; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    text-align: center; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.pokemon-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+}

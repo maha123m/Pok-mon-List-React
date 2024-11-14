@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.css'; 
+import './component/Login-Form/Login.css';  
+import './component/Pokemon List/PokemonList.css'; 
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Login from './component/Login-Form/Login.js'; 
+import PokemonList from './component/Pokemon List/PokemonList.js';
+import welcomeImage from './welcome.png'; 
+import { BrowserRouter as Router, Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
-export default App;
+const App = () => {
+    const location = useLocation(); 
+
+    return (
+        <div className={location.pathname === '/' ? 'login-container' : 'pokemon-page'}>
+            {location.pathname === '/' && ( 
+                <div className="image-container">
+                    <img src={welcomeImage} alt="Welcome" />
+                </div>
+            )}
+            
+            <Routes>
+                <Route path="/" element={<LoginRedirect />} /> {}
+                <Route path="/pokemon" element={<PokemonList />} /> {}
+            </Routes>
+        </div>
+    );
+};
+
+// Component to handle redirection after successful login
+const LoginRedirect = () => {
+    const navigate = useNavigate();
+
+    // Simulate login status check (you should replace this with actual login logic)
+    const isLoggedIn = true; // Change this value based on your login logic
+
+    if (isLoggedIn) {
+        navigate('/pokemon');
+    }
+
+    return <Login />; 
+};
+
+const AppWrapper = () => (
+    <Router>
+        <App />
+    </Router>
+);
+
+export default AppWrapper; 

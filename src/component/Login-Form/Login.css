@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    animation: backgroundMove 10s infinite alternate;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+h1{
+    padding: 40px ;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    flex: 1;
+    text-align: center;
+    padding-right: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.form-container {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #07427d;
+}
+
+.alert {
+    color: red; /* or any color you prefer */
+    font-size: 14px; /* adjust the size as needed */
+    margin-top: 5px; /* spacing above the alert */
+}
+
+
+#error-message {
+    color: red;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+/* Tablet view: 768px to 1023px */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .image-container {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    .image-container img {
+        max-width: 90%;
+    }
+    .form-container {
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+
+/* Mobile view: less than 768px */
+@media only screen and (max-width: 767px) {
+    .container {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .form-container {
+        padding: 0 10px;
+    }
+
+    .image-container img {
+        max-width: 80%;
+    }
+}
+
+/* Desktop view: larger than 1023px */
+@media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+
+
