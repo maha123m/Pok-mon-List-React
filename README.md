@@ -63,7 +63,7 @@ For reference, check out this sample site: [PokeAPI Webflow Example](https://pok
 ## Preview of the Project Pages
 
 ### Login Page
-![Login Page](public/assets/login-page.png)
+![Login Page](public/assets/landing-login.png)
 
 
 
