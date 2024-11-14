@@ -63,9 +63,11 @@ For reference, check out this sample site: [PokeAPI Webflow Example](https://pok
 ## Preview of the Project Pages
 
 ### Login Page
-![Login Page](assets/landing-login.png)
+![Login Page](public/assets/login-page.png)
+
+
 
 ### Pokemon Page Layout
-![Pokemon Page](assets/pokemon-page.png)
+![Pokemon Page Layout](public/assets/pokemon-page.png)
 
 
